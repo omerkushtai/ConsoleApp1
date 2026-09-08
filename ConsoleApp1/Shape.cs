@@ -6,11 +6,12 @@ namespace ConsoleApp1
     public abstract class Shape
     {
         private static int _counter;
-        private int _id;
+        private string _id;
+        
         public Shape()
         {
             _counter++;
-            _id = ++_counter;
+            _id = _counter.ToString("D9");
         }
 
         public abstract double GetArea();

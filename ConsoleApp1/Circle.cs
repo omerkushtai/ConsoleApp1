@@ -1,7 +1,7 @@
 
 namespace ConsoleApp1
 {
-    public class Circle : Shape
+    public class Circle : Shape, IRollable
     {
         private double radius;
 
@@ -18,6 +18,11 @@ namespace ConsoleApp1
         public override double GetPerimeter()
         {
             return 2 * Math.PI * radius;
+        }
+
+        public void Roll()
+        {
+            Console.WriteLine($"Rolling the circle ");
         }
     }
 }
