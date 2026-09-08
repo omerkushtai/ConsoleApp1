@@ -7,7 +7,15 @@ namespace ConsoleApp1
     {
         private static int _counter;
         private string _id;
-        
+        private enum ShapeColor
+        {
+            red,
+            white,
+            green,
+            blue,
+            pink
+        }
+
         public Shape()
         {
             _counter++;

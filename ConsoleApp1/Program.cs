@@ -22,6 +22,16 @@ namespace ConsoleApp1
                 Console.WriteLine($"Perimeter: {shape.GetPerimeter()}");
                 Console.WriteLine();
             }
+            Dictionary<string, Shape> shapeDictionary = new Dictionary<string, Shape>();
+            foreach (Shape shape in shapes)
+            {
+                shapeDictionary.Add(shape.ToString(), shape);
+            }
+            foreach (KeyValuePair<string, Shape> item in shapeDictionary)
+            {
+                Console.WriteLine(item.Value);
+            }
+
         }
     }
    
